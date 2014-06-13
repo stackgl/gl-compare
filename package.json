@@ -1,0 +1,57 @@
+{
+  "name": "gl-compare",
+  "version": "1.0.0",
+  "description": "Visually compare two webgl render loops on the fly",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd example && beefy index.js:bundle.js --open",
+    "bundle": "browserify example/index.js > bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {
+    "a-big-triangle": "0.0.0",
+    "canvas-pixels": "0.0.0",
+    "gl-fbo": "^1.1.0",
+    "glslify": "^1.4.0"
+  },
+  "devDependencies": {
+    "beefy": "^1.1.0",
+    "browserify": "^4.1.10",
+    "canvas-fit": "0.0.0",
+    "canvas-orbit-camera": "0.0.0",
+    "domify": "^1.2.2",
+    "gl-clear": "0.0.0",
+    "gl-context": "^0.1.0",
+    "gl-geometry": "0.0.0",
+    "gl-matrix": "^2.1.0",
+    "icosphere": "0.0.0",
+    "normals": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/gl-compare.git"
+  },
+  "keywords": [
+    "webgl",
+    "gl",
+    "comparison",
+    "gl-modules",
+    "difference",
+    "onion",
+    "fbo"
+  ],
+  "homepage": "https://github.com/hughsk/gl-compare",
+  "bugs": {
+    "url": "https://github.com/hughsk/gl-compare/issues"
+  }
+}
