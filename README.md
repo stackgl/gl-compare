@@ -63,9 +63,9 @@ between 0 and 1. Has the following effects:
 
 * `diff`: 0 will amplify *any* difference considerably, whereas 1 will dull the
   difference to only show the most significant changes.
-* `onion`: 0 will display `actual`, 1 will display `expected`, and any values
+* `onion`: 0 will display `expected`, 1 will display `actual`, and any values
   in between will be a mixture of both.
-* `slide`: 0 will display `actual`, 1 will display `expected`, and any values
+* `slide`: 0 will display `expected`, 1 will display `actual`, and any values
   in between will move the slider from the left of the buffer to the right.
 
 ## License

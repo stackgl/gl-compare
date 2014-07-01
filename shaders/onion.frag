@@ -9,5 +9,5 @@ void main() {
   vec3 ca = texture2D(tActual, vUv).rgb;
   vec3 ce = texture2D(tExpected, vUv).rgb;
 
-  gl_FragColor = vec4(mix(ca, ce, uAmount), 1.0);
+  gl_FragColor = vec4(mix(ce, ca, uAmount), 1.0);
 }
