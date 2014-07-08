@@ -3,7 +3,7 @@
 Visually compare two WebGL render loops on the fly by drawing them to an FBO
 and diffing them with shaders.
 
-[![gl-compare](http://imgur.com/zVtYFax.jpg)](http://hughsk.io/gl-compare)
+[![gl-compare](http://imgur.com/zVtYFax.jpg)](http://gl-modules.github.io/gl-compare)
 
 ## Usage
 
@@ -70,4 +70,4 @@ between 0 and 1. Has the following effects:
 
 ## License
 
-MIT. See [LICENSE.md](http://github.com/hughsk/gl-compare/blob/master/LICENSE.md) for details.
+MIT. See [LICENSE.md](http://github.com/gl-modules/gl-compare/blob/master/LICENSE.md) for details.

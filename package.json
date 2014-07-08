@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hughsk/gl-compare.git"
+    "url": "git://github.com/gl-modules/gl-compare.git"
   },
   "keywords": [
     "webgl",
@@ -50,8 +50,8 @@
     "onion",
     "fbo"
   ],
-  "homepage": "https://github.com/hughsk/gl-compare",
+  "homepage": "https://github.com/gl-modules/gl-compare",
   "bugs": {
-    "url": "https://github.com/hughsk/gl-compare/issues"
+    "url": "https://github.com/gl-modules/gl-compare/issues"
   }
 }
