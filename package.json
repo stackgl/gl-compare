@@ -19,23 +19,23 @@
     "url": "http://hughsk.io/"
   },
   "dependencies": {
-    "a-big-triangle": "0.0.0",
+    "a-big-triangle": "1.0.2",
     "canvas-pixels": "0.0.0",
-    "gl-fbo": "^1.1.0",
-    "glslify": "^1.4.0"
+    "gl-fbo": "^2.0.5",
+    "glslify": "^2.3.1"
   },
   "devDependencies": {
-    "beefy": "^1.1.0",
-    "browserify": "^4.1.10",
-    "canvas-fit": "0.0.0",
-    "canvas-orbit-camera": "0.0.0",
+    "beefy": "^2.1.5",
+    "browserify": "^12.0.1",
+    "canvas-fit": "1.5.0",
+    "canvas-orbit-camera": "1.0.2",
     "domify": "^1.2.2",
-    "gl-clear": "0.0.0",
+    "gl-clear": "2.0.0",
     "gl-context": "^0.1.0",
-    "gl-geometry": "0.0.0",
+    "gl-geometry": "1.2.0",
     "gl-matrix": "^2.1.0",
-    "icosphere": "0.0.0",
-    "normals": "^0.1.0"
+    "icosphere": "1.0.0",
+    "normals": "^1.0.1"
   },
   "repository": {
     "type": "git",
