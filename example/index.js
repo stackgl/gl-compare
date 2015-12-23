@@ -9,6 +9,7 @@ var fitter         = require('canvas-fit')
 var icosphere      = require('icosphere')
 var normals        = require('normals')
 var glslify        = require('glslify')
+var glShader       = require('gl-shader')
 var domify         = require('domify')
 var comparator     = require('../')
 
@@ -41,23 +42,19 @@ slide.style.right = '32px'
 camera.distance = 3
 compare.mode = 'diff'
 
-var actualShader = glslify({
-    vert: './reverse.vert'
-  , frag: './actual.frag'
-})(gl)
+var actualShader = glShader(gl
+  , glslify('./reverse.vert')
+  , glslify('./actual.frag')
+)
 
-var expectedShader = glslify({
-    vert: './basic.vert'
-  , frag: './expected.frag'
-})(gl)
+var expectedShader = glShader(gl
+  , glslify('./basic.vert')
+  , glslify('./expected.frag')
+)
 
 window.addEventListener('resize', resize(), false)
 function resize() {
   fit()
-
-  compare.actual.fbo.shape =
-  compare.expected.fbo.shape = [canvas.height, canvas.width]
-
   return resize
 }
 

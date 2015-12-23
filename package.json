@@ -22,6 +22,7 @@
     "a-big-triangle": "1.0.2",
     "canvas-pixels": "0.0.0",
     "gl-fbo": "^2.0.5",
+    "gl-shader": "^4.1.0",
     "glslify": "^2.3.1"
   },
   "devDependencies": {
@@ -32,6 +33,7 @@
     "domify": "^1.2.2",
     "gl-clear": "2.0.0",
     "gl-context": "^0.1.0",
+    "glsl-dither": "^1.0.1",
     "gl-geometry": "1.2.0",
     "gl-matrix": "^2.1.0",
     "icosphere": "1.0.0",

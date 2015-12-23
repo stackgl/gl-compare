@@ -1,6 +1,7 @@
 var triangle  = require('a-big-triangle')
 var pixels    = require('canvas-pixels')
 var glslify   = require('glslify')
+var glShader  = require('gl-shader')
 var createFBO = require('gl-fbo')
 
 module.exports = Compare
@@ -13,22 +14,22 @@ function Compare(gl, actual, expected) {
   this.expected = expected
   this._mode = modes[0]
   this.shaders = {
-    diff: glslify({
-        vert: './shaders/full.vert'
-      , frag: './shaders/diff.frag'
-    })(gl),
-    onion: glslify({
-        vert: './shaders/full.vert'
-      , frag: './shaders/onion.frag'
-    })(gl),
-    slide: glslify({
-        vert: './shaders/full.vert'
-      , frag: './shaders/slide.frag'
-    })(gl)
+    diff: glShader(gl,
+      glslify('./shaders/full.vert')
+      , glslify('./shaders/diff.frag')
+    ),
+    onion: glShader(gl
+      , glslify('./shaders/full.vert')
+      , glslify('./shaders/onion.frag')
+    ),
+    slide: glShader(gl
+      , glslify('./shaders/full.vert')
+      , glslify('./shaders/slide.frag')
+    )
   }
 
-  this.actual.fbo = createFBO(gl, 512, 512)
-  this.expected.fbo = createFBO(gl, 512, 512)
+  this.actual.fbo = createFBO(gl, [512, 512])
+  this.expected.fbo = createFBO(gl, [512, 512])
 
   this.diff = { amount: 0.1 }
   this.slide = { amount: 0.5 }
